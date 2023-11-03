@@ -132,4 +132,5 @@ dist
 
 lotes_json/*
 out/*
+tmp
 .vscode
