@@ -6,7 +6,8 @@
   "scripts": {
     "lotes": "node manejoArchivos/lotes.js",
     "start": "node .",
-    "filtrar": "node manejoArchivos/FiltrarJson.js"
+    "filtrar": "node manejoArchivos/FiltrarJson.js",
+    "hilo": "node hilos.js"
   },
   "keywords": [],
   "author": "",
