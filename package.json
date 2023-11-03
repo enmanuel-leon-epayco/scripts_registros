@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lotes": "node manejoArchivos/lotes.js",
-    "start": "node ."
+    "start": "node .",
+    "filtrar": "node manejoArchivos/FiltrarJson.js"
   },
   "keywords": [],
   "author": "",

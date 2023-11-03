@@ -1,6 +1,6 @@
 const fs = require("fs");
 const JsonData = require("../Data/Result_14.json");
-const FiltrarData = require("./Data/Logs todos.json");//Especificar
+const FiltrarData = require("../Data/Log 0311 5.json");//Especificar
 
 const run = () => {
   const Filtros = FiltrarData.map((el) => el.request.idElastic);
