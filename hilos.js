@@ -18,9 +18,8 @@ const run = async () => {
   const end = parseInt(process.argv[3]);
   for (let index = start; index <= end; index++) {
     console.log(`Lote ${index}: Start`);
-    const command = `node index.js lotes_json/${index}.json >> out/run_1120/Lote_${index}.csv`;
+    const command = `node index.js lotes_json/${index}.json >> out/Lote_${index}.csv`;
     await runCommand(command, index);
   }
-  //runCommand("npm run lotes >> out/Lotes.csv")
 };
 run();
