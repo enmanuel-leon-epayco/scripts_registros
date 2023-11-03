@@ -1,0 +1,8 @@
+version: '2'
+services:
+  script:
+    build:
+      dockerfile: Dockerfile
+    container_name: script_container
+    volumes:
+      - ./out:/home/node/app/out 
