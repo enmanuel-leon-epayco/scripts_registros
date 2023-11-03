@@ -2,7 +2,7 @@ require("dotenv").config();
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const { START, END } = process.env;
-
+console.log({ START, END })
 async function runCommand(command, lote) {
   const { stdout, stderr, error } = await exec(command);
   if (stderr) {
