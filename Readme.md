@@ -1,3 +1,5 @@
+```docker-compose up -d```
+
 ## Paso a paso de ejecucion
 1. Crear carpetas `out` y `lotes_json` en la carpeta raiz.
 2. Ejecutar el comando `npm run lotes >> out/Lotes.csv` para generar los lotes en la carpeta `lotes_json`.

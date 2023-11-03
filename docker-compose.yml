@@ -1,8 +1,32 @@
 version: '2'
 services:
-  script:
+  script1:
     build:
+      context: .
       dockerfile: Dockerfile
-    container_name: script_container
+    container_name: script1_container
     volumes:
-      - ./out:/home/node/app/out 
+      - ./out:/home/node/app/out
+    environment:
+      - START=1
+      - END=5
+  script2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: script2_container
+    volumes:
+      - ./out:/home/node/app/out
+    environment:
+      - START=6
+      - END=10
+  script3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: script3_container
+    volumes:
+      - ./out:/home/node/app/out
+    environment:
+      - START=11
+      - END=15
