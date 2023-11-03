@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lotes": "node lotes.js",
+    "lotes": "node manejoArchivos/lotes.js",
     "start": "node ."
   },
   "keywords": [],

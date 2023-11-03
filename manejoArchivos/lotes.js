@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const run = async () => {
-  let datos = require("../Result_14.json");
+  let datos = require("../Data/Result_14.json");
   lotes = 100;
   loteId = 1;
   nuevoLote = [];
