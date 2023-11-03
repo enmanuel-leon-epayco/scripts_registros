@@ -4,7 +4,12 @@
 1. Crear carpetas `out` y `lotes_json` en la carpeta raiz.
 2. Ejecutar el comando `npm run lotes >> out/Lotes.csv` para generar los lotes en la carpeta `lotes_json`.
 3. Ejecutar el comando `time npm run hilos` con el primer lote y el ultimo lote a ejecutar.
-4. Esperar la respuesta del comando.
+4.Crear variables de entorno para indicar el rango de lotes a ejecutar.
+```ENV
+START=1
+END=50
+```
+5. Esperar la respuesta del comando.
 
 ## Detalle de los comandos.
 
