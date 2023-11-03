@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const { START, END } = process.env;
@@ -16,9 +16,9 @@ async function runCommand(command, lote) {
 }
 
 const run = async () => {
-  /*const start = parseInt(process.argv[2]);
-  const end = parseInt(process.argv[3]);*/
-  for (let index = START; index <= END; index++) {
+  const start = parseInt(START);
+  const end = parseInt(END);
+  for (let index = start; index <= end; index++) {
     console.log(`Lote ${index}: Start`);
     const command = `node index.js lotes_json/${index}.json >> out/Lote_${index}.csv`;
     await runCommand(command, index);
