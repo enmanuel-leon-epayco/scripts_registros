@@ -11,7 +11,7 @@ RUN npm i
 COPY . .
 
 #Third stage - production
-CMD ["time","node", "hilos.js", "71", "80" ]
+CMD ["time","node", "hilos.js", "101", "110" ]
 
 #docker build -t hilo_1:latest .
 #docker run hilo_1:latest
