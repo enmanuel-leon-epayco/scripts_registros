@@ -134,3 +134,4 @@ lotes_json/*
 out/*
 tmp
 .vscode
+.idea
