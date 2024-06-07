@@ -6,7 +6,7 @@ const run = async () => {
   for (const data of array.Facturas) {
     axios
       .post(
-        "https://secure.payco.co/recaudo/api/contingencia/recuperarRegistros",
+        process.env.URL_PROCESAMIENTO,
         data,
         {
           timeout: 10 * 60 * 1000,
