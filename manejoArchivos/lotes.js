@@ -1,8 +1,8 @@
 const fs = require("fs");
 
 const run = async () => {
-  let datos = require("../Data/Result_19.json");
-  lotes = 100;
+  let datos = require("../Data/FacturasFiltradas.json");
+  lotes = 1000;
   loteId = 1;
   nuevoLote = [];
   console.log("LoteId;Registros");
@@ -10,7 +10,7 @@ const run = async () => {
     const dato = datos[index];
     nuevoLote.push(dato);
     if (nuevoLote.length === lotes) {
-      console.log(`${loteId};${nuevoLote.length}`);
+      console.log(`${loteId+''};${nuevoLote.length}`);
       fs.writeFileSync(
         "./lotes_json/" + loteId + ".json",
         JSON.stringify({

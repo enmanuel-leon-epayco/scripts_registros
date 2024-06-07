@@ -20,7 +20,7 @@ const run = async () => {
   const end = parseInt(END);
   for (let index = start; index <= end; index++) {
     console.log(`Lote ${index}: Start`);
-    const command = `node index.js lotes_json/${index}.json >> out/Lote_${index}.csv`;
+    const command = `bun index.js lotes_json/${index}.json >> out/Lote_${index}.csv`;
     await runCommand(command, index);
   }
 };

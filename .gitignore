@@ -135,3 +135,5 @@ out/*
 tmp
 .vscode
 .idea
+
+Data/*
