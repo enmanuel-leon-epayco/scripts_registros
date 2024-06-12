@@ -6,7 +6,7 @@
   "scripts": {
     "lotes": "node manejoArchivos/lotes.js",
     "start": "node .",
-    "filtrar": "node manejoArchivos/FiltrarJson.js",
+    "filtrar": "bun manejoArchivos/FiltrarJson.js",
     "hilos": "node hilos.js"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "3": "^2.1.0",
+    "@elastic/elasticsearch": "~7.10",
     "axios": "^1.6.0",
     "dotenv": "^16.3.1"
   }
